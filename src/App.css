@@ -18,6 +18,14 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.student{
+color: blueviolet;
+border: 2px solid burlywood;
+margin: 20px;
+padding: 20px;
+border-radius: 10px;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
