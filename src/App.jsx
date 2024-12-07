@@ -15,6 +15,7 @@ function App() {
       <Person></Person>
       <Student name="Shakil Ahmed" subject="CSE" id="01"></Student>
       <Student name="Shakil" subject="CE" id="02"></Student>
+      <Student></Student>
     </>
   )
 }
@@ -44,7 +45,7 @@ function Person(){
   return <h3 style={{backgroundColor: 'white', color: 'black', padding: '15px', margin: '20px', fontSize: '20px', borderRadius: '10px'}}>I am {person.name}, my age is {person.age}. Total amount of balance on my pocket is {money}. </h3>
 }
 
-const Student = ({name, subject, id}) =>{
+const Student = ({name='None', subject='None', id='0'}) =>{
   // const student = {id: '01', name: 'Shakil Ahmed', subject: 'CSE'}
   return <div className='student'>
     <h2>This is a student</h2>
