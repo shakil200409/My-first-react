@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Todo from './todo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,13 +10,16 @@ function App() {
   return (
     <>
       <Developer></Developer>
-      <Device name="laptop" price="10000"></Device>
+      <Todo task='React JS' isDone= {true}></Todo>
+      <Todo task='Core Concepts' isDone={false}></Todo>
+      <Todo task='Try JSX' isDone={true}></Todo>
+      {/* <Device name="laptop" price="10000"></Device>
       <Device name="Mobile" price="5000"></Device>
       <Device name="Monitor" price="20000"></Device>
       <Person></Person>
       <Student name="Shakil Ahmed" subject="CSE" id="01"></Student>
       <Student name="Shakil" subject="CE" id="02"></Student>
-      <Student></Student>
+      <Student id={10}></Student> */}
     </>
   )
 }
@@ -27,6 +31,8 @@ function Device(props){
 
 function Developer(){
 const devStyle = {
+  padding: '20px 50px',
+  margin:  '20px',
   border: '2px solid tomato',
   borderRadius: '10px',
   backgroundColor: 'black',
