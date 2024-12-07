@@ -13,7 +13,8 @@ function App() {
       <Device name="Mobile" price="5000"></Device>
       <Device name="Monitor" price="20000"></Device>
       <Person></Person>
-      <Student></Student>
+      <Student name="Shakil Ahmed" subject="CSE" id="01"></Student>
+      <Student name="Shakil" subject="CE" id="02"></Student>
     </>
   )
 }
@@ -43,13 +44,13 @@ function Person(){
   return <h3 style={{backgroundColor: 'white', color: 'black', padding: '15px', margin: '20px', fontSize: '20px', borderRadius: '10px'}}>I am {person.name}, my age is {person.age}. Total amount of balance on my pocket is {money}. </h3>
 }
 
-const Student = () =>{
-  const student = {id: '01', name: 'Shakil Ahmed', subject: 'CSE'}
+const Student = ({name, subject, id}) =>{
+  // const student = {id: '01', name: 'Shakil Ahmed', subject: 'CSE'}
   return <div className='student'>
     <h2>This is a student</h2>
-    <p>Name: {student.name} </p>
-    <p>Subject: {student.subject} </p>
-    <p>Id: {student.id} </p>
+    <p>Name: {name} </p>
+    <p>Subject: {subject} </p>
+    <p>Id: {id} </p>
   </div>
 }
 export default App
