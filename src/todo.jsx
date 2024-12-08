@@ -41,7 +41,7 @@
 //     )
 // }
 
-// Conditional Rendaring: Option-4 With or operator- ||
+// Conditional Rendaring: Option-5 With or operator- ||
 export default function Todo({task, isDone}){
     return(
         <li> {task}: {isDone || ' Do it'} </li>
